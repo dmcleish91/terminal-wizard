@@ -13,6 +13,8 @@ type Input interface {
 	View() string
 }
 
+/* SHORT ANSWER FIELD */
+
 type ShortAnswerField struct {
 	textinput textinput.Model
 }
@@ -42,6 +44,8 @@ func NewShortAnswerField() *ShortAnswerField {
 	ti.Focus()
 	return &ShortAnswerField{ti}
 }
+
+/* LONG ANSWER FIELD */
 
 type LongAnswerField struct {
 	textarea textarea.Model
